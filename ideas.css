@@ -1,0 +1,221 @@
+
+@connection {
+  database: "stuff";
+  username: "dbuser";
+  password: "3j9ceaX,";
+  connection: "postgresql://u:p@host:port/db";
+}
+
+
+/*
+  - tabeli nimi + on
+  --------------------
+  - action
+  - where
+  - returning
+  - set / default (eraldi css reegel?)
+  - (vars/const) ... pole vaja kui zazleri expressionist loobuda
+  - +REST (selectoris mis meetod)
+
+  ::pseudo
+  :pseudo
+  @media (max-with: 200px) { ... }
+*/
+
+tabel:on("new.id=id")
+
+tabel:on-primary-key-match {
+}
+*:on-primary-key-match {
+}
+
+table:on(:eq(id));
+
+table:on-pkey-match { ...}
+table:on-pkey-match:on-error { /* on-sql-error, on-dublicate-key, on-sql-permission-denied, on-authentication-permission-denied */
+  http-code: 200;
+  error-message: "Already exists";
+};
+
+table:form-data {
+
+}
+table:method-delete {
+  body-type: number; /* DELETE 1 */
+  body-type: form-data;
+  body-type: json ; /* DELETE {id:1}; */
+  body-pattern: "/users/(\d+)"; /* DELETE /users/1 */
+  key-field: "id"; /* vaikimis primary key */
+};
+
+table:on-input-row[id] { /* see on not null ... new-d pole ju vaja */
+}
+table:on[id],  table:on-input-row[code] { /* see on not null */
+}
+
+table:on-input-row("new.id>0") {
+  set-created_at: "now()";
+  set(created_at): "now()"; 
+  set { /* sarnane media-ga */
+    created_at: "now()";
+  };
+  &.foo {
+    set-value: sql("now()");
+    default-value: "now()" ;
+    default-value: current-timestamp;
+    default-value: now;
+  }
+  &.a { set-value: sql("now()"); number-constaint: must-be-positive; }
+  &.b { set-value: ""; }
+  &.c { set-value: sql("now()"); }
+  &.c { set-value: 3; }
+
+  where: "case id = 32 then x else y end";
+  primary-key: "id";
+
+  created_at-field: "created_at";
+  updated_at-field: "at";
+  deleted_at-field: "deleted_at"; /* kustutamise asemele kirjtatakse kuupäev või pannakse true vastavalt tüübile */
+  authentication-owner-field: "username"; /* saab uuendada ainult omanik, kirjutamisel täidetakse ära autom. */
+    /* kui on vale kasutaja, siis tuleb mingi mõistlik error DSS-i enda poolt */
+  auth-user-field: "updated_by";
+
+  returning: auto / none / seq "foo" "id" / sql("$1 = foo AND $2 = blahh") auth.id auth.group;
+  returning: auto / none / seq "foo" "id" / sql(auth.id " = foo AND " auth.group " = blahh");
+}
+
+foo {
+  test: 123
+}
+
+midagi {
+  created_at: "now()"
+}
+
+table:on-input-row("new.id=id") {
+  set: midagi, foo
+}
+
+table.created_at:on-input-row-primary-key-missing {
+   set-value: "now()";
+}
+
+table:on-input { /* on-input("true") */
+  
+}
+
+table.foo:on[id^="-"] {
+  set-value: "foo-content";
+}
+
+@lsize(len) {
+  value: sql("substr(abc," len ", " foo ")");
+};
+
+@lsize(len,...) {
+  value: sql("substr(abc," len ", " ... ")"); /* kolm punkti peab komad ise vahele panema */
+};
+@lsize(len,...) {
+  value: sql("substr(abc," len ", " ... ")"); /* kolm punkti peab komad ise vahele panema */
+};
+
+/* idee pattern matchingust */
+@lsize(1,...) {
+  value: sql("substr(abc," len ", " ... ")"); /* kolm punkti peab komad ise vahele panema */
+};
+@lsize(2,...) {
+  value: sql("substr(abc," len ", " ... ")"); /* kolm punkti peab komad ise vahele panema */
+};
+
+
+@foo {
+  value: "0";
+}
+
+#alias @let  /* ainult selle aliase sees saadaolev */
+
+#uustabel [get.foo] {
+  /* kui get parameetrites on foo */
+}
+
+#uustabel { 
+  base-table: "users";  /* "users" "u" */
+  table-alias: "u";
+
+  where: sql("id > 3 AND " lsize(3,foo,sql("id"),"id") " = foo");
+  where: sql(auth.id " = foo");
+  where: sql(get.bar " = bar"); /* GET-i puhul peab automaatselt ära varjama, let-i puhul ei pea, auth-i puhul peab */
+  order-by: .id desc, .foo not null;
+  vars {
+    ""
+  }
+  &.* { access: none ;}
+  &.* { visibility: none;} /* on peidutud, aga saad selectida kui lisad URL-i */
+  &.id, &.name, &.address {
+    visibility: visible;
+    access: read;
+    value: auto; /* SQL-sisu pannakse vastavalt välja nime järgi */
+  }
+  &.is_adult { value: sql("case age > 18 then true else false end"); }
+
+  &.groups {
+    base-table: "group";
+
+  }
+
+  /* aliasele mingit filtrit ainult juhul kui muutuja on olemas */
+  /* aliases muutujad, mis peavad olemas olema */
+}
+#uustabel.id { value: sql("id"); }
+#uustabel.id { value: sql("auto"); }
+
+#menutree {
+  base-table: "menu";
+  &.* { value: auto; }
+  &.child {
+    base-table: "menu";
+    where: sql("parent = " menutree.id);
+    &.sub {
+      base-table: "jhasgd";
+      where: sql("parent = " child.id)
+    }
+  }
+  where: sql("parent IS NULL");
+}
+
+#menutree {
+  base-table: "menu";
+  &.* { value: auto; }
+  &.child {
+    appearance: only-on-results / always; /* väldib tühja massiivi näitamist */
+    query-type: aggregated / row-by-row;  /* pärib kas in(..) või rida-rea haaval */
+    base-table: "menu";
+    where: sql("parent = " menutree.id);
+    &.sub {
+      base-table: "jhasgd";
+      where: sql("parent = " child.id)
+    }
+  }
+  where: sql("parent IS NULL");
+}
+
+
+#menutree {
+  base-table: "menu";
+  menu-structure-by: "parent";
+}
+
+#chat {
+  resource-type: stream;
+  base-table: "chat";
+  authentication-filter-field: "to_user";
+  &.* { value: auto; } /* tahaks ilma selleta läbi saada */
+}
+
+#stream {
+  resource-type: stream;
+  base-table: "foo";
+  where: expr(id = 3);
+}
+
+
