@@ -1,0 +1,34 @@
+cabal: Entering directory '/home/elektrik/zdbc/postgresql/'
+[1 of 1] Compiling Main             ( /home/elektrik/zdbc/postgresql/dist/dist-sandbox-919b2384/setup/setup.hs, /home/elektrik/zdbc/postgresql/dist/dist-sandbox-919b2384/setup/Main.o )
+Linking /home/elektrik/zdbc/postgresql/dist/dist-sandbox-919b2384/setup/setup ...
+Configuring ZDBC-postgresql-2.3.2.2...
+Building ZDBC-postgresql-2.3.2.2...
+Preprocessing library ZDBC-postgresql-2.3.2.2...
+[1 of 9] Compiling Database.ZDBC.PostgreSQL.Parser ( Database/ZDBC/PostgreSQL/Parser.hs, dist/dist-sandbox-919b2384/build/Database/ZDBC/PostgreSQL/Parser.o )
+[2 of 9] Compiling Database.ZDBC.PostgreSQL.PTypeConv ( dist/dist-sandbox-919b2384/build/Database/ZDBC/PostgreSQL/PTypeConv.hs, dist/dist-sandbox-919b2384/build/Database/ZDBC/PostgreSQL/PTypeConv.o )
+[3 of 9] Compiling Database.ZDBC.PostgreSQL.Types ( Database/ZDBC/PostgreSQL/Types.hs, dist/dist-sandbox-919b2384/build/Database/ZDBC/PostgreSQL/Types.o )
+[4 of 9] Compiling Database.ZDBC.PostgreSQL.Utils ( dist/dist-sandbox-919b2384/build/Database/ZDBC/PostgreSQL/Utils.hs, dist/dist-sandbox-919b2384/build/Database/ZDBC/PostgreSQL/Utils.o )
+[5 of 9] Compiling Database.ZDBC.PostgreSQL.Statement ( dist/dist-sandbox-919b2384/build/Database/ZDBC/PostgreSQL/Statement.hs, dist/dist-sandbox-919b2384/build/Database/ZDBC/PostgreSQL/Statement.o )
+
+Database/ZDBC/PostgreSQL/Statement.hsc:20:1: warning: [-Wunused-imports]
+    The qualified import of ‘Data.ByteString.Lazy’ is redundant
+      except perhaps to import instances from ‘Data.ByteString.Lazy’
+    To import instances alone, use: import Data.ByteString.Lazy()
+
+Database/ZDBC/PostgreSQL/Statement.hsc:54:8: warning: [-Wname-shadowing]
+    This binding for ‘inforef’ shadows the existing binding
+      defined at Database/ZDBC/PostgreSQL/Statement.hsc:43:14
+[6 of 9] Compiling Database.ZDBC.PostgreSQL.ConnectionImpl ( Database/ZDBC/PostgreSQL/ConnectionImpl.hs, dist/dist-sandbox-919b2384/build/Database/ZDBC/PostgreSQL/ConnectionImpl.o )
+[7 of 9] Compiling Database.ZDBC.PostgreSQL.Connection ( dist/dist-sandbox-919b2384/build/Database/ZDBC/PostgreSQL/Connection.hs, dist/dist-sandbox-919b2384/build/Database/ZDBC/PostgreSQL/Connection.o )
+
+Database/ZDBC/PostgreSQL/Connection.hsc:7:1: warning: [-Wtabs]
+    Tab character found here.
+    Please use spaces instead.
+[8 of 9] Compiling Database.ZDBC.PostgreSQL.ErrorCodes ( Database/ZDBC/PostgreSQL/ErrorCodes.hs, dist/dist-sandbox-919b2384/build/Database/ZDBC/PostgreSQL/ErrorCodes.o )
+[9 of 9] Compiling Database.ZDBC.PostgreSQL ( Database/ZDBC/PostgreSQL.hs, dist/dist-sandbox-919b2384/build/Database/ZDBC/PostgreSQL.o )
+Creating package registration file:
+/tmp/pkgConf-ZDBC-postgresql-2.3.25965166491189641421.2
+Installing library in
+/home/elektrik/dss/.cabal-sandbox/lib/x86_64-linux-ghc-8.0.1.20160521/ZDBC-postgresql-2.3.2.2-6rIq3MzxF5RDpmJaUcYZW4
+Registering ZDBC-postgresql-2.3.2.2...
+cabal: Leaving directory '/home/elektrik/zdbc/postgresql/'

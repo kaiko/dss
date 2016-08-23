@@ -1,0 +1,43 @@
+cabal: Entering directory '/tmp/cabal-tmp-23129/HDBC-2.4.0.1'
+Configuring HDBC-2.4.0.1...
+Building HDBC-2.4.0.1...
+Preprocessing library HDBC-2.4.0.1...
+[1 of 8] Compiling Database.HDBC.Locale ( Database/HDBC/Locale.hs, dist/dist-sandbox-919b2384/build/Database/HDBC/Locale.o )
+[2 of 8] Compiling Database.HDBC.SqlValue ( Database/HDBC/SqlValue.hs, dist/dist-sandbox-919b2384/build/Database/HDBC/SqlValue.o )
+
+Database/HDBC/SqlValue.hs:38:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Convertible SqlValue a
+    • In the type signature for:
+           quickError :: (Typeable a, Convertible SqlValue a) =>
+                         SqlValue -> ConvertResult a
+
+Database/HDBC/SqlValue.hs:922:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Convertible SqlValue a
+    • In the type signature for:
+           viaInteger' :: (Convertible SqlValue a, Bounded a, Show a,
+                           Convertible a Integer, Typeable a) =>
+                          SqlValue -> (Integer -> ConvertResult a) -> ConvertResult a
+
+Database/HDBC/SqlValue.hs:938:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Convertible SqlValue a
+    • In the type signature for:
+           read' :: (Typeable a, Read a, Convertible SqlValue a) =>
+                    String -> ConvertResult a
+
+Database/HDBC/SqlValue.hs:949:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Convertible SqlValue t
+    • In the type signature for:
+           parseTime' :: (Typeable t, Convertible SqlValue t, ParseTime t) =>
+                         String -> String -> ConvertResult t
+[3 of 8] Compiling Database.HDBC.ColTypes ( Database/HDBC/ColTypes.hs, dist/dist-sandbox-919b2384/build/Database/HDBC/ColTypes.o )
+[4 of 8] Compiling Database.HDBC.Statement ( Database/HDBC/Statement.hs, dist/dist-sandbox-919b2384/build/Database/HDBC/Statement.o )
+[5 of 8] Compiling Database.HDBC.Types ( Database/HDBC/Types.hs, dist/dist-sandbox-919b2384/build/Database/HDBC/Types.o )
+[6 of 8] Compiling Database.HDBC.Utils ( Database/HDBC/Utils.hs, dist/dist-sandbox-919b2384/build/Database/HDBC/Utils.o )
+[7 of 8] Compiling Database.HDBC.DriverUtils ( Database/HDBC/DriverUtils.hs, dist/dist-sandbox-919b2384/build/Database/HDBC/DriverUtils.o )
+[8 of 8] Compiling Database.HDBC    ( Database/HDBC.hs, dist/dist-sandbox-919b2384/build/Database/HDBC.o )
+Creating package registration file:
+/tmp/pkgConf-HDBC-2.4.07833686901102520059.1
+Installing library in
+/home/elektrik/dss/.cabal-sandbox/lib/x86_64-linux-ghc-8.0.1.20160521/HDBC-2.4.0.1-7POwQotLfPNCS4pymWuWO8
+Registering HDBC-2.4.0.1...
+cabal: Leaving directory '/tmp/cabal-tmp-23129/HDBC-2.4.0.1'

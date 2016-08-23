@@ -1,0 +1,18 @@
+cabal: Entering directory '/tmp/cabal-tmp-3618/case-insensitive-1.2.0.6'
+Configuring case-insensitive-1.2.0.6...
+Building case-insensitive-1.2.0.6...
+Preprocessing library case-insensitive-1.2.0.6...
+[1 of 3] Compiling Data.CaseInsensitive.Internal ( Data/CaseInsensitive/Internal.hs, dist/dist-sandbox-919b2384/build/Data/CaseInsensitive/Internal.o )
+
+Data/CaseInsensitive/Internal.hs:103:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: FoldCase s
+    • In the type signature for:
+           unsafeMk :: FoldCase s => s -> CI s
+[2 of 3] Compiling Data.CaseInsensitive.Unsafe ( Data/CaseInsensitive/Unsafe.hs, dist/dist-sandbox-919b2384/build/Data/CaseInsensitive/Unsafe.o )
+[3 of 3] Compiling Data.CaseInsensitive ( Data/CaseInsensitive.hs, dist/dist-sandbox-919b2384/build/Data/CaseInsensitive.o )
+Creating package registration file:
+/tmp/pkgConf-case-insensitive-1.2.020406514341975960378.6
+Installing library in
+/home/elektrik/dss/.cabal-sandbox/lib/x86_64-linux-ghc-8.0.1.20160521/case-insensitive-1.2.0.6-6wXdNb03nEPFT3o9XKcio
+Registering case-insensitive-1.2.0.6...
+cabal: Leaving directory '/tmp/cabal-tmp-3618/case-insensitive-1.2.0.6'

@@ -1,0 +1,156 @@
+cabal: Entering directory '/tmp/cabal-tmp-19104/time-1.5.0.1'
+Configuring time-1.5.0.1...
+checking for gcc... /usr/bin/gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether /usr/bin/gcc accepts -g... yes
+checking for /usr/bin/gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... /usr/bin/gcc -E
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking time.h usability... yes
+checking time.h presence... yes
+checking for time.h... yes
+checking for gmtime_r... yes
+checking for localtime_r... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for struct tm.tm_zone... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking whether altzone is declared... no
+configure: creating ./config.status
+config.status: creating lib/include/HsTimeConfig.h
+config.status: lib/include/HsTimeConfig.h is unchanged
+Building time-1.5.0.1...
+Preprocessing library time-1.5.0.1...
+[ 1 of 25] Compiling Data.Time.Clock.CTimeval ( lib/Data/Time/Clock/CTimeval.hs, dist/dist-sandbox-919b2384/build/Data/Time/Clock/CTimeval.o )
+
+lib/Data/Time/Clock/CTimeval.hs:17:1: warning: [-Wtabs]
+    Tab character found here, and in 16 further locations.
+    Please use spaces instead.
+[ 2 of 25] Compiling Data.Time.Clock.Scale ( lib/Data/Time/Clock/Scale.hs, dist/dist-sandbox-919b2384/build/Data/Time/Clock/Scale.o )
+
+lib/Data/Time/Clock/Scale.hs:7:1: warning: [-Wtabs]
+    Tab character found here, and in 25 further locations.
+    Please use spaces instead.
+[ 3 of 25] Compiling Data.Time.Calendar.Days ( lib/Data/Time/Calendar/Days.hs, dist/dist-sandbox-919b2384/build/Data/Time/Calendar/Days.o )
+
+lib/Data/Time/Calendar/Days.hs:6:1: warning: [-Wtabs]
+    Tab character found here, and in 14 further locations.
+    Please use spaces instead.
+[ 4 of 25] Compiling Data.Time.Clock.UTC ( lib/Data/Time/Clock/UTC.hs, dist/dist-sandbox-919b2384/build/Data/Time/Clock/UTC.o )
+
+lib/Data/Time/Clock/UTC.hs:7:1: warning: [-Wtabs]
+    Tab character found here, and in 47 further locations.
+    Please use spaces instead.
+[ 5 of 25] Compiling Data.Time.Calendar.Private ( lib/Data/Time/Calendar/Private.hs, dist/dist-sandbox-919b2384/build/Data/Time/Calendar/Private.o )
+[ 6 of 25] Compiling Data.Time.Calendar.JulianYearDay ( lib/Data/Time/Calendar/JulianYearDay.hs, dist/dist-sandbox-919b2384/build/Data/Time/Calendar/JulianYearDay.o )
+
+lib/Data/Time/Calendar/JulianYearDay.hs:3:1: warning: [-Wtabs]
+    Tab character found here, and in 19 further locations.
+    Please use spaces instead.
+[ 7 of 25] Compiling Data.Time.Clock.POSIX ( lib/Data/Time/Clock/POSIX.hs, dist/dist-sandbox-919b2384/build/Data/Time/Clock/POSIX.o )
+
+lib/Data/Time/Clock/POSIX.hs:5:1: warning: [-Wtabs]
+    Tab character found here, and in one further location.
+    Please use spaces instead.
+[ 8 of 25] Compiling Data.Time.Clock.UTCDiff ( lib/Data/Time/Clock/UTCDiff.hs, dist/dist-sandbox-919b2384/build/Data/Time/Clock/UTCDiff.o )
+[ 9 of 25] Compiling Data.Time.Clock  ( lib/Data/Time/Clock.hs, dist/dist-sandbox-919b2384/build/Data/Time/Clock.o )
+
+lib/Data/Time/Clock.hs:4:1: warning: [-Wtabs]
+    Tab character found here, and in three further locations.
+    Please use spaces instead.
+[10 of 25] Compiling Data.Time.LocalTime.TimeZone ( lib/Data/Time/LocalTime/TimeZone.hs, dist/dist-sandbox-919b2384/build/Data/Time/LocalTime/TimeZone.o )
+
+lib/Data/Time/LocalTime/TimeZone.hs:8:1: warning: [-Wtabs]
+    Tab character found here, and in 31 further locations.
+    Please use spaces instead.
+[11 of 25] Compiling Data.Time.LocalTime.TimeOfDay ( lib/Data/Time/LocalTime/TimeOfDay.hs, dist/dist-sandbox-919b2384/build/Data/Time/LocalTime/TimeOfDay.o )
+
+lib/Data/Time/LocalTime/TimeOfDay.hs:6:1: warning: [-Wtabs]
+    Tab character found here, and in 24 further locations.
+    Please use spaces instead.
+[12 of 25] Compiling Data.Time.Calendar.OrdinalDate ( lib/Data/Time/Calendar/OrdinalDate.hs, dist/dist-sandbox-919b2384/build/Data/Time/Calendar/OrdinalDate.o )
+
+lib/Data/Time/Calendar/OrdinalDate.hs:11:1: warning: [-Wtabs]
+    Tab character found here, and in 41 further locations.
+    Please use spaces instead.
+[13 of 25] Compiling Data.Time.Calendar.WeekDate ( lib/Data/Time/Calendar/WeekDate.hs, dist/dist-sandbox-919b2384/build/Data/Time/Calendar/WeekDate.o )
+
+lib/Data/Time/Calendar/WeekDate.hs:14:1: warning: [-Wtabs]
+    Tab character found here, and in 37 further locations.
+    Please use spaces instead.
+[14 of 25] Compiling Data.Time.Calendar.MonthDay ( lib/Data/Time/Calendar/MonthDay.hs, dist/dist-sandbox-919b2384/build/Data/Time/Calendar/MonthDay.o )
+
+lib/Data/Time/Calendar/MonthDay.hs:2:1: warning: [-Wtabs]
+    Tab character found here, and in 18 further locations.
+    Please use spaces instead.
+[15 of 25] Compiling Data.Time.Calendar.Julian ( lib/Data/Time/Calendar/Julian.hs, dist/dist-sandbox-919b2384/build/Data/Time/Calendar/Julian.o )
+
+lib/Data/Time/Calendar/Julian.hs:3:1: warning: [-Wtabs]
+    Tab character found here, and in 13 further locations.
+    Please use spaces instead.
+[16 of 25] Compiling Data.Time.Calendar.Gregorian ( lib/Data/Time/Calendar/Gregorian.hs, dist/dist-sandbox-919b2384/build/Data/Time/Calendar/Gregorian.o )
+
+lib/Data/Time/Calendar/Gregorian.hs:6:1: warning: [-Wtabs]
+    Tab character found here, and in 16 further locations.
+    Please use spaces instead.
+[17 of 25] Compiling Data.Time.Calendar ( lib/Data/Time/Calendar.hs, dist/dist-sandbox-919b2384/build/Data/Time/Calendar.o )
+
+lib/Data/Time/Calendar.hs:3:1: warning: [-Wtabs]
+    Tab character found here, and in one further location.
+    Please use spaces instead.
+[18 of 25] Compiling Data.Time.Calendar.Easter ( lib/Data/Time/Calendar/Easter.hs, dist/dist-sandbox-919b2384/build/Data/Time/Calendar/Easter.o )
+
+lib/Data/Time/Calendar/Easter.hs:2:1: warning: [-Wtabs]
+    Tab character found here, and in 10 further locations.
+    Please use spaces instead.
+[19 of 25] Compiling Data.Time.LocalTime.LocalTime ( lib/Data/Time/LocalTime/LocalTime.hs, dist/dist-sandbox-919b2384/build/Data/Time/LocalTime/LocalTime.o )
+
+lib/Data/Time/LocalTime/LocalTime.hs:7:1: warning: [-Wtabs]
+    Tab character found here, and in 25 further locations.
+    Please use spaces instead.
+[20 of 25] Compiling Data.Time.LocalTime ( lib/Data/Time/LocalTime.hs, dist/dist-sandbox-919b2384/build/Data/Time/LocalTime.o )
+
+lib/Data/Time/LocalTime.hs:3:1: warning: [-Wtabs]
+    Tab character found here, and in two further locations.
+    Please use spaces instead.
+[21 of 25] Compiling Data.Time.Clock.TAI ( lib/Data/Time/Clock/TAI.hs, dist/dist-sandbox-919b2384/build/Data/Time/Clock/TAI.o )
+
+lib/Data/Time/Clock/TAI.hs:6:1: warning: [-Wtabs]
+    Tab character found here, and in 87 further locations.
+    Please use spaces instead.
+[22 of 25] Compiling Data.Time.Format.Locale ( lib/Data/Time/Format/Locale.hs, dist/dist-sandbox-919b2384/build/Data/Time/Format/Locale.o )
+[23 of 25] Compiling Data.Time.Format.Parse ( lib/Data/Time/Format/Parse.hs, dist/dist-sandbox-919b2384/build/Data/Time/Format/Parse.o )
+[24 of 25] Compiling Data.Time.Format ( lib/Data/Time/Format.hs, dist/dist-sandbox-919b2384/build/Data/Time/Format.o )
+
+lib/Data/Time/Format.hs:2:1: warning: [-Wtabs]
+    Tab character found here, and in 90 further locations.
+    Please use spaces instead.
+[25 of 25] Compiling Data.Time        ( lib/Data/Time.hs, dist/dist-sandbox-919b2384/build/Data/Time.o )
+
+lib/Data/Time.hs:3:1: warning: [-Wtabs]
+    Tab character found here, and in three further locations.
+    Please use spaces instead.
+Creating package registration file:
+/tmp/pkgConf-time-1.5.01315634022635723058.1
+Installing library in
+/home/elektrik/dss/.cabal-sandbox/lib/x86_64-linux-ghc-8.0.1.20160521/time-1.5.0.1-7YRD6A110U85GkCfV2HErU
+Registering time-1.5.0.1...
+cabal: Leaving directory '/tmp/cabal-tmp-19104/time-1.5.0.1'

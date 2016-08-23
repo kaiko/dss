@@ -1,0 +1,38 @@
+
+a { foo: bar; }
+b { alfa: "bravo"; }
+c, d.c { }
+* { x-bar  : sql("tere " tore "h ello"); }
+a.b { foo: bar; }
+a[a] { }
+b[a^="v"] {}
+c[a$="v"] {}
+
+@connection {
+  database: "stuff";
+  username: "dbuser";
+  password: "3j9ceaX,";
+  connection: "postgresql://u:p@host:port/db";
+}
+
+tabel:on-primary-key-match { }
+*:on-primary-key-match { }
+
+table:on-pkey-match { }
+
+table:on-pkey-match:on-error { /* on-sql-error, on-dublicate-key, on-sql-permission-denied, on-authentication-permission-denied */
+  http-code: 200;
+  error-message: "Already exists";
+}
+
+table:method-delete {
+  body-type: number; /* DELETE 1 */
+  body-type: form-data;
+  body-type: json ; /* DELETE {id:1  ; */
+  body-pattern: "/users/(\d+)"; /* DELETE /users/1 */
+  key-field: "id"; /* vaikimis primary key */
+}
+
+#brrr {}
+
+:foo:bar :bar { }

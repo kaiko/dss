@@ -1,0 +1,76 @@
+cabal: Entering directory '/tmp/cabal-tmp-20091/HTTP-4000.3.3'
+Configuring HTTP-4000.3.3...
+Building HTTP-4000.3.3...
+Preprocessing library HTTP-4000.3.3...
+[ 1 of 18] Compiling Network.HTTP.MD5Aux ( Network/HTTP/MD5Aux.hs, dist/dist-sandbox-919b2384/build/Network/HTTP/MD5Aux.o )
+[ 2 of 18] Compiling Paths_HTTP       ( dist/dist-sandbox-919b2384/build/autogen/Paths_HTTP.hs, dist/dist-sandbox-919b2384/build/Paths_HTTP.o )
+[ 3 of 18] Compiling Network.HTTP.Base64 ( Network/HTTP/Base64.hs, dist/dist-sandbox-919b2384/build/Network/HTTP/Base64.o )
+[ 4 of 18] Compiling Network.Stream   ( Network/Stream.hs, dist/dist-sandbox-919b2384/build/Network/Stream.o )
+
+Network/Stream.hs:35:1: warning: [-Wdeprecations]
+    Module ‘Control.Monad.Error’ is deprecated:
+      Use Control.Monad.Except instead
+
+Network/Stream.hs:44:10: warning: [-Wdeprecations]
+    In the use of type constructor or class ‘Error’
+    (imported from Control.Monad.Error, but defined in transformers-0.5.2.0:Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+Network/Stream.hs:44:10: warning: [-Wdeprecations]
+    In the use of type constructor or class ‘Error’
+    (imported from Control.Monad.Error, but defined in transformers-0.5.2.0:Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+Network/Stream.hs:45:11: warning: [-Wdeprecations]
+    In the use of ‘strMsg’
+    (imported from Control.Monad.Error, but defined in transformers-0.5.2.0:Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+Network/Stream.hs:52:24: warning: [-Wdeprecations]
+    In the use of ‘strMsg’
+    (imported from Control.Monad.Error, but defined in transformers-0.5.2.0:Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+[ 5 of 18] Compiling Network.HTTP.Utils ( Network/HTTP/Utils.hs, dist/dist-sandbox-919b2384/build/Network/HTTP/Utils.o )
+[ 6 of 18] Compiling Network.HTTP.Headers ( Network/HTTP/Headers.hs, dist/dist-sandbox-919b2384/build/Network/HTTP/Headers.o )
+[ 7 of 18] Compiling Network.HTTP.Cookie ( Network/HTTP/Cookie.hs, dist/dist-sandbox-919b2384/build/Network/HTTP/Cookie.o )
+[ 8 of 18] Compiling Network.BufferType ( Network/BufferType.hs, dist/dist-sandbox-919b2384/build/Network/BufferType.o )
+[ 9 of 18] Compiling Network.HTTP.Base ( Network/HTTP/Base.hs, dist/dist-sandbox-919b2384/build/Network/HTTP/Base.o )
+
+Network/HTTP/Base.hs:110:1: warning: [-Wdeprecations]
+    Module ‘Control.Monad.Error’ is deprecated:
+      Use Control.Monad.Except instead
+[10 of 18] Compiling Network.TCP      ( Network/TCP.hs, dist/dist-sandbox-919b2384/build/Network/TCP.o )
+
+Network/TCP.hs:118:10: warning: [-Wredundant-constraints]
+    • Redundant constraint: Eq ty
+    • In the instance declaration for ‘Eq (StreamHooks ty)’
+
+Network/TCP.hs:278:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: HStream a
+    • In the type signature for:
+           closeConnection :: HStream a => HandleStream a -> IO Bool -> IO ()
+[11 of 18] Compiling Network.StreamDebugger ( Network/StreamDebugger.hs, dist/dist-sandbox-919b2384/build/Network/StreamDebugger.o )
+
+Network/StreamDebugger.hs:65:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: Stream a
+    • In the type signature for:
+           debugStream :: Stream a => FilePath -> a -> IO (StreamDebugger a)
+
+Network/StreamDebugger.hs:84:1: warning: [-Wredundant-constraints]
+    • Redundant constraint: HStream ty
+    • In the type signature for:
+           debugStreamHooks :: HStream ty =>
+                               Handle -> String -> StreamHooks ty
+[12 of 18] Compiling Network.StreamSocket ( Network/StreamSocket.hs, dist/dist-sandbox-919b2384/build/Network/StreamSocket.o )
+[13 of 18] Compiling Network.HTTP.Auth ( Network/HTTP/Auth.hs, dist/dist-sandbox-919b2384/build/Network/HTTP/Auth.o )
+[14 of 18] Compiling Network.HTTP.Proxy ( Network/HTTP/Proxy.hs, dist/dist-sandbox-919b2384/build/Network/HTTP/Proxy.o )
+[15 of 18] Compiling Network.HTTP.HandleStream ( Network/HTTP/HandleStream.hs, dist/dist-sandbox-919b2384/build/Network/HTTP/HandleStream.o )
+[16 of 18] Compiling Network.HTTP     ( Network/HTTP.hs, dist/dist-sandbox-919b2384/build/Network/HTTP.o )
+[17 of 18] Compiling Network.HTTP.Stream ( Network/HTTP/Stream.hs, dist/dist-sandbox-919b2384/build/Network/HTTP/Stream.o )
+[18 of 18] Compiling Network.Browser  ( Network/Browser.hs, dist/dist-sandbox-919b2384/build/Network/Browser.o )
+Creating package registration file:
+/tmp/pkgConf-HTTP-4000.32145174067468703135.3
+Installing library in
+/home/elektrik/dss/.cabal-sandbox/lib/x86_64-linux-ghc-8.0.1.20160521/HTTP-4000.3.3-DT6LUnBRgoS7jIjjT61Tjx
+Registering HTTP-4000.3.3...
+cabal: Leaving directory '/tmp/cabal-tmp-20091/HTTP-4000.3.3'

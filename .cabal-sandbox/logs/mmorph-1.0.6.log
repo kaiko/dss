@@ -1,0 +1,56 @@
+cabal: Entering directory '/tmp/cabal-tmp-3619/mmorph-1.0.6'
+Configuring mmorph-1.0.6...
+Building mmorph-1.0.6...
+Preprocessing library mmorph-1.0.6...
+[1 of 2] Compiling Control.Monad.Morph ( src/Control/Monad/Morph.hs, dist/dist-sandbox-919b2384/build/Control/Monad/Morph.o )
+
+src/Control/Monad/Morph.hs:76:1: warning: [-Wdeprecations]
+    Module ‘Control.Monad.Trans.Error’ is deprecated:
+      Use Control.Monad.Trans.Except instead
+
+src/Control/Monad/Morph.hs:112:20: warning: [-Wdeprecations]
+    In the use of type constructor or class ‘ErrorT’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+src/Control/Monad/Morph.hs:113:19: warning: [-Wdeprecations]
+    In the use of data constructor ‘ErrorT’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+src/Control/Monad/Morph.hs:113:34: warning: [-Wdeprecations]
+    In the use of ‘runErrorT’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+src/Control/Monad/Morph.hs:233:11: warning: [-Wdeprecations]
+    In the use of type constructor or class ‘Error’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+src/Control/Monad/Morph.hs:233:33: warning: [-Wdeprecations]
+    In the use of type constructor or class ‘ErrorT’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+src/Control/Monad/Morph.hs:234:17: warning: [-Wdeprecations]
+    In the use of data constructor ‘ErrorT’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+src/Control/Monad/Morph.hs:235:14: warning: [-Wdeprecations]
+    In the use of ‘runErrorT’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+
+src/Control/Monad/Morph.hs:235:30: warning: [-Wdeprecations]
+    In the use of ‘runErrorT’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+[2 of 2] Compiling Control.Monad.Trans.Compose ( src/Control/Monad/Trans/Compose.hs, dist/dist-sandbox-919b2384/build/Control/Monad/Trans/Compose.o )
+Creating package registration file:
+/tmp/pkgConf-mmorph-1.0760658181605894428.6
+Installing library in
+/home/elektrik/dss/.cabal-sandbox/lib/x86_64-linux-ghc-8.0.1.20160521/mmorph-1.0.6-I6fWQohILlqH1gvA6UibXU
+Registering mmorph-1.0.6...
+cabal: Leaving directory '/tmp/cabal-tmp-3619/mmorph-1.0.6'

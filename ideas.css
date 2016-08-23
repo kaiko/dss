@@ -24,10 +24,8 @@
 
 tabel:on("new.id=id")
 
-tabel:on-primary-key-match {
-}
-*:on-primary-key-match {
-}
+tabel:on-primary-key-match { }
+*:on-primary-key-match { }
 
 table:on(:eq(id));
 
@@ -48,9 +46,9 @@ table:method-delete {
   key-field: "id"; /* vaikimis primary key */
 };
 
-table:on-input-row[id] { /* see on not null ... new-d pole ju vaja */
+table:input-row[id] { /* see on not null ... new-d pole ju vaja */
 }
-table:on[id],  table:on-input-row[code] { /* see on not null */
+table:input-row[code] { /* see on not null */
 }
 
 table:on-input-row("new.id>0") {
@@ -92,7 +90,8 @@ midagi {
   created_at: "now()"
 }
 
-table:on-input-row("new.id=id") {
+/* table:on-input-row("new.id=id") { */
+table:on-input-row(sql(new.id " = id")) {
   set: midagi, foo
 }
 

@@ -1,0 +1,14 @@
+cabal: Entering directory '/tmp/cabal-tmp-3615/wai-logger-2.2.7'
+Configuring wai-logger-2.2.7...
+Building wai-logger-2.2.7...
+Preprocessing library wai-logger-2.2.7...
+[1 of 4] Compiling Network.Wai.Logger.IORef ( Network/Wai/Logger/IORef.hs, dist/dist-sandbox-919b2384/build/Network/Wai/Logger/IORef.o )
+[2 of 4] Compiling Network.Wai.Logger.IP ( Network/Wai/Logger/IP.hs, dist/dist-sandbox-919b2384/build/Network/Wai/Logger/IP.o )
+[3 of 4] Compiling Network.Wai.Logger.Apache ( Network/Wai/Logger/Apache.hs, dist/dist-sandbox-919b2384/build/Network/Wai/Logger/Apache.o )
+[4 of 4] Compiling Network.Wai.Logger ( Network/Wai/Logger.hs, dist/dist-sandbox-919b2384/build/Network/Wai/Logger.o )
+Creating package registration file:
+/tmp/pkgConf-wai-logger-2.29957068871823089412.7
+Installing library in
+/home/elektrik/dss/.cabal-sandbox/lib/x86_64-linux-ghc-8.0.1.20160521/wai-logger-2.2.7-8gOKctdcHgn3iz5E7a8Wfz
+Registering wai-logger-2.2.7...
+cabal: Leaving directory '/tmp/cabal-tmp-3615/wai-logger-2.2.7'

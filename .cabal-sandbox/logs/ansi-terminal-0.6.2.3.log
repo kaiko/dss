@@ -1,0 +1,13 @@
+cabal: Entering directory '/tmp/cabal-tmp-3617/ansi-terminal-0.6.2.3'
+Configuring ansi-terminal-0.6.2.3...
+Building ansi-terminal-0.6.2.3...
+Preprocessing library ansi-terminal-0.6.2.3...
+[1 of 3] Compiling System.Console.ANSI.Common ( System/Console/ANSI/Common.hs, dist/dist-sandbox-919b2384/build/System/Console/ANSI/Common.o )
+[2 of 3] Compiling System.Console.ANSI.Unix ( System/Console/ANSI/Unix.hs, dist/dist-sandbox-919b2384/build/System/Console/ANSI/Unix.o )
+[3 of 3] Compiling System.Console.ANSI ( System/Console/ANSI.hs, dist/dist-sandbox-919b2384/build/System/Console/ANSI.o )
+Creating package registration file:
+/tmp/pkgConf-ansi-terminal-0.6.214472676051369321801.3
+Installing library in
+/home/elektrik/dss/.cabal-sandbox/lib/x86_64-linux-ghc-8.0.1.20160521/ansi-terminal-0.6.2.3-ILVFznSfy4jAPDirSSQ3NZ
+Registering ansi-terminal-0.6.2.3...
+cabal: Leaving directory '/tmp/cabal-tmp-3617/ansi-terminal-0.6.2.3'

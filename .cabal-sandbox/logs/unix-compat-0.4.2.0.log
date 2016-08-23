@@ -1,0 +1,18 @@
+cabal: Entering directory '/tmp/cabal-tmp-3619/unix-compat-0.4.2.0'
+Configuring unix-compat-0.4.2.0...
+Building unix-compat-0.4.2.0...
+Preprocessing library unix-compat-0.4.2.0...
+[1 of 8] Compiling System.PosixCompat.User ( dist/dist-sandbox-919b2384/build/System/PosixCompat/User.hs, dist/dist-sandbox-919b2384/build/System/PosixCompat/User.o )
+[2 of 8] Compiling System.PosixCompat.Unistd ( src/System/PosixCompat/Unistd.hs, dist/dist-sandbox-919b2384/build/System/PosixCompat/Unistd.o )
+[3 of 8] Compiling System.PosixCompat.Types ( src/System/PosixCompat/Types.hs, dist/dist-sandbox-919b2384/build/System/PosixCompat/Types.o )
+[4 of 8] Compiling System.PosixCompat.Extensions ( dist/dist-sandbox-919b2384/build/System/PosixCompat/Extensions.hs, dist/dist-sandbox-919b2384/build/System/PosixCompat/Extensions.o )
+[5 of 8] Compiling System.PosixCompat.Time ( src/System/PosixCompat/Time.hs, dist/dist-sandbox-919b2384/build/System/PosixCompat/Time.o )
+[6 of 8] Compiling System.PosixCompat.Temp ( src/System/PosixCompat/Temp.hs, dist/dist-sandbox-919b2384/build/System/PosixCompat/Temp.o )
+[7 of 8] Compiling System.PosixCompat.Files ( dist/dist-sandbox-919b2384/build/System/PosixCompat/Files.hs, dist/dist-sandbox-919b2384/build/System/PosixCompat/Files.o )
+[8 of 8] Compiling System.PosixCompat ( src/System/PosixCompat.hs, dist/dist-sandbox-919b2384/build/System/PosixCompat.o )
+Creating package registration file:
+/tmp/pkgConf-unix-compat-0.4.213080448781346811305.0
+Installing library in
+/home/elektrik/dss/.cabal-sandbox/lib/x86_64-linux-ghc-8.0.1.20160521/unix-compat-0.4.2.0-UrDxXiiGwH1RilIbk5s2Q
+Registering unix-compat-0.4.2.0...
+cabal: Leaving directory '/tmp/cabal-tmp-3619/unix-compat-0.4.2.0'
